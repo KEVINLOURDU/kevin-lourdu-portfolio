@@ -1,6 +1,11 @@
 # Kevin Lourdu — Portfolio Architecture & Motion Engineering
 
+[![Live Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-black?logo=vercel)](https://kevin-lourdu-portfolio.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/KEVINLOURDU/kevin-lourdu-portfolio)
+
 A personal portfolio website engineered for **Kevin Lourdu**, 2nd-year B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning) student at Jain University, Bengaluru.
+
+**Live URL:** [https://kevin-lourdu-portfolio.vercel.app](https://kevin-lourdu-portfolio.vercel.app)
 
 ---
 

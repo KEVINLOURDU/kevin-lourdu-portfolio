@@ -1,86 +1,91 @@
-# Kevin Lourdu — Portfolio Architecture & Motion Engineering
+# Kevin Lourdu — Developer Portfolio & Motion Systems
 
-[![Live Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-black?logo=vercel)](https://kevin-lourdu-portfolio.vercel.app)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/KEVINLOURDU/kevin-lourdu-portfolio)
+[![Live Demo](https://img.shields.io/badge/Vercel-Live%20Demo-black?style=for-the-badge&logo=vercel)](https://kevin-lourdu-portfolio.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/KEVINLOURDU/kevin-lourdu-portfolio)
+[![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JavaScript-blue?style=for-the-badge)](https://kevin-lourdu-portfolio.vercel.app)
 
-A personal portfolio website engineered for **Kevin Lourdu**, 2nd-year B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning) student at Jain University, Bengaluru.
+A modern, high-contrast, motion-rich personal developer portfolio engineered with 3D spatial perspective tilt physics, Web Audio synthesizer click feedback, and client-side SPA routing.
 
-**Live URL:** [https://kevin-lourdu-portfolio.vercel.app](https://kevin-lourdu-portfolio.vercel.app)
+🌐 **Live Website:** [https://kevin-lourdu-portfolio.vercel.app](https://kevin-lourdu-portfolio.vercel.app)
 
 ---
 
-## 1. Directory Structure
+## 📸 Website Previews
+
+### Desktop Hero & Profile Experience
+![Kevin Lourdu Portfolio Preview](assets/preview.png)
+
+### Projects & Engineering Showcase
+![Kevin Lourdu Projects Preview](assets/preview-projects.png)
+
+---
+
+## ⚡ About the Website
+
+The website is a high-performance personal developer portfolio built with zero framework overhead, focusing on clean engineering, fluid micro-interactions, and responsive design.
+
+### Key Capabilities & Motion Engineering
+
+* **Single-Page Application (SPA) Routing:**  
+  Seamless hash and tab navigation (`#home`, `#projects`, `#skills`, `#education`, `#about`, `#contact`) with deep-linking support, alongside standalone HTML views for direct sharing.
+* **3D Spatial Perspective Mouse Tilt:**  
+  Cards calculate real-time mouse offsets from center to project mechanical 3D tilt using `perspective(1000px) rotateX(...) rotateY(...)` without layout thrashing.
+* **Cursor-Following Specular Spotlight:**  
+  Tracks pointer coordinates dynamically to cast a subtle radial spotlight glare across velvet noir glassmorphism card surfaces.
+* **Web Audio API Tactile Sound Synthesis:**  
+  Synthesizes a clean 1200Hz sine-wave transient descending to 400Hz over 12ms on interactive button clicks without external audio files.
+* **Responsive Glassmorphism Design:**  
+  Dark mode aesthetic built with custom CSS design tokens, smooth spring restitution, and adaptive layouts optimized for mobile, tablet, and desktop viewports.
+
+---
+
+## 🛠️ Technical Stack
+
+* **Frontend:** HTML5, CSS3 Custom Properties (Variables), Vanilla JavaScript (ES6+)
+* **Audio Engine:** Web Audio API (real-time frequency synthesis)
+* **Hosting & CDN:** Vercel Fluid Edge Network
+* **Version Control:** Git & GitHub
+
+---
+
+## 🚀 Featured Projects on the Site
+
+1. **Genetic Algorithm Visualizer:** Computational simulation demonstrating evolutionary optimization, chromosome fitness calculation, roulette-wheel selection, and mutation rates.
+2. **University Internship Portal:** Academic student web platform designed to streamline internship opportunities, mentor communication, and application milestones.
+3. **Developer Identity & Motion Engine:** Interactive personal identity platform with tactile physics feedback and clean-room architecture.
+
+---
+
+## 📁 Project Structure
 
 ```
 kevin-lourdu-portfolio/
-├── index.html       # Master Single-Page Application (SPA) with tab & hash deep-linking
-├── projects.html    # Standalone Projects Archive (Genetic Algorithm Visualizer, Internship Portal, Portfolio)
-├── skills.html      # Standalone Technical Skills & Stack (Python, C, AI, Machine Learning, Data Science)
-├── education.html   # Standalone Education & Qualifications (Jain University & Cambridge Matric Hr Sec)
-├── about.html       # Standalone Biography & Philosophy
-├── contact.html     # Standalone Connect Hub & Message Form
-├── styles.css       # Complete design token stylesheet & responsive media queries
-├── script.js        # 3D spatial perspective tilt, cursor spotlight, Web Audio click synthesis
-├── preview.bat      # Windows batch launcher to open in default browser
-└── README.md        # Architecture, tokens, and technical documentation
+├── assets/
+│   ├── preview.png             # Hero & profile preview screenshot
+│   └── preview-projects.png    # Projects archive preview screenshot
+├── about.html                  # Standalone biography view
+├── contact.html                # Standalone connect hub & message form
+├── education.html              # Standalone academic qualifications view
+├── index.html                  # Core Single-Page Application (SPA)
+├── kevin-portrait.jpg          # Executive portrait asset
+├── preview.bat                 # Windows batch launcher to open in browser
+├── projects.html               # Standalone projects archive view
+├── README.md                   # Project documentation & visual showcase
+├── script.js                   # Motion physics, audio synthesis & SPA router
+├── skills.html                 # Standalone technical stack view
+├── styles.css                  # Design token stylesheet & responsive rules
+└── vercel.json                 # Vercel deployment & clean routing config
 ```
 
 ---
 
-## 2. Motion Physics & Interactive Capabilities
+## 💻 Running Locally
 
-1. **3D Spatial Perspective Mouse Tilt:**
-   - Interactive cards calculate real-time mouse offsets from center: `rotateX = ((y - centerY) / centerY) * -7deg`, `rotateY = ((x - centerX) / centerX) * 7deg`.
-   - Utilizes `transform: perspective(1000px) rotateX(...) rotateY(...) translateY(-2px)` without layout thrashing.
-2. **Cursor-Following Specular Spotlight Glare:**
-   - Injects dynamic CSS custom properties `--mouse-x` and `--mouse-y` dynamically tracking pointer coordinates to project an ethereal radial spotlight across card surfaces.
-3. **Web Audio API Tactile Sound Synthesis:**
-   - Synthesizes a clean 1200Hz sine-wave transient descending to 400Hz over 12ms on all interactive button clicks without external audio files.
-4. **Spring Restitution:**
-   - Buttons and interactive items employ active press states `scale(0.97)` with `cubic-bezier(0.16, 1, 0.3, 1)` easing.
-5. **Breathing Beacon Indicator:**
-   - The status badge ("Available for Internships") utilizes CSS `@keyframes pulse-ring` breathing at 2-second cycles in accent lime `#c5ff41`.
-
----
-
-## 3. Personal & Academic Profile
-
-- **Full Name:** Kevin Lourdu
-- **Degree:** Bachelor of Technology (B.Tech)
-- **Branch:** Computer Science & Engineering (Artificial Intelligence & Machine Learning)
-- **Current Year:** 2nd Year
-- **University:** Jain University, Bengaluru, Karnataka, India
-- **Hometown / School:** Krishnagiri, Tamil Nadu (Cambridge Matric Higher Secondary School)
-- **Personal Email:** `kevinpansi2008@gmail.com`
-- **University Email:** `juug25btech23464@jainuniversity.ac.in`
-- **GitHub:** [https://github.com/KEVINLOURDU](https://github.com/KEVINLOURDU)
-- **LinkedIn:** [https://www.linkedin.com/in/kevin-lourdu-a-3013b038b](https://www.linkedin.com/in/kevin-lourdu-a-3013b038b)
-- **Instagram:** [@_kev.shadowluxe_](https://www.instagram.com/_kev.shadowluxe_/?utm_source=ig_web_button_share_sheet)
-
----
-
-## 4. Technical Skills & Projects Featured
-
-### Core Skills:
-- **Python:** Scientific computing, data wrangling, automation, AI simulation.
-- **C Programming:** Pointers, memory allocation, data structures, algorithm efficiency.
-- **Artificial Intelligence:** Search heuristics, genetic algorithms, state space optimization.
-- **Machine Learning:** Supervised/unsupervised models, regression, classification, Scikit-learn.
-- **Data Science:** Exploratory data analysis, statistical distributions, NumPy, Pandas, Matplotlib.
-- **Developer Tools:** Visual Studio Code, Git, GitHub, Linux bash terminal, Markdown.
-
-### Projects Showcase:
-1. **Genetic Algorithm Visualizer:**
-   Computational simulation illustrating natural selection, roulette-wheel fitness selection, multi-point crossover, and mutation rates across evolving generations.
-2. **University Internship Portal:**
-   Academic portal enabling Jain University students to browse verified internship roles, submit credentials, track recruiter milestones, and communicate with mentors.
-3. **Personal Portfolio Website:**
-   High-contrast, motion-rich developer identity built with 3D spatial perspective tilt, cursor spotlight glare, Emil Kowalski tactile spring clicks via Web Audio synthesis, and client-side SPA routing.
-
----
-
-## 5. How to Run & Customize
-
-- Double-click `preview.bat` inside `S:\Works\Projects\kevin-lourdu-portfolio\`.
-- Or open `index.html` directly in any modern web browser.
-- **To add your own profile photo:** Save any photo as `kevin-photo.jpg` in `S:\Works\Projects\kevin-lourdu-portfolio\` and update the `src` attribute of the avatar image in `index.html` (instructions are marked with an HTML comment).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KEVINLOURDU/kevin-lourdu-portfolio.git
+   cd kevin-lourdu-portfolio
+   ```
+2. Open in your browser:
+   * On Windows: double-click `preview.bat`
+   * Or open `index.html` directly in any modern web browser

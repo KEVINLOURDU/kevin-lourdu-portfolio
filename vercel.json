@@ -2,10 +2,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/projects", "destination": "/pages/projects.html" },
-    { "source": "/skills", "destination": "/pages/skills.html" },
-    { "source": "/education", "destination": "/pages/education.html" },
-    { "source": "/contact", "destination": "/pages/contact.html" }
+    { "source": "/about", "destination": "/pages/about" },
+    { "source": "/projects", "destination": "/pages/projects" },
+    { "source": "/skills", "destination": "/pages/skills" },
+    { "source": "/education", "destination": "/pages/education" },
+    { "source": "/contact", "destination": "/pages/contact" }
   ]
 }

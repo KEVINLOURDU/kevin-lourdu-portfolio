@@ -7,7 +7,7 @@ A personal portfolio website engineered for **Kevin Lourdu**, 2nd-year B.Tech Co
 ## 1. Directory Structure
 
 ```
-S:\Works\Projects\kevin-lourdu-portfolio\
+kevin-lourdu-portfolio/
 ├── index.html       # Master Single-Page Application (SPA) with tab & hash deep-linking
 ├── projects.html    # Standalone Projects Archive (Genetic Algorithm Visualizer, Internship Portal, Portfolio)
 ├── skills.html      # Standalone Technical Skills & Stack (Python, C, AI, Machine Learning, Data Science)
@@ -48,6 +48,7 @@ S:\Works\Projects\kevin-lourdu-portfolio\
 - **Hometown / School:** Krishnagiri, Tamil Nadu (Cambridge Matric Higher Secondary School)
 - **Personal Email:** `kevinpansi2008@gmail.com`
 - **University Email:** `juug25btech23464@jainuniversity.ac.in`
+- **GitHub:** [https://github.com/KEVINLOURDU](https://github.com/KEVINLOURDU)
 - **LinkedIn:** [https://www.linkedin.com/in/kevin-lourdu-a-3013b038b](https://www.linkedin.com/in/kevin-lourdu-a-3013b038b)
 - **Instagram:** [@_kev.shadowluxe_](https://www.instagram.com/_kev.shadowluxe_/?utm_source=ig_web_button_share_sheet)
 

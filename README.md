@@ -47,20 +47,23 @@ A client-side developer portfolio engineered without external UI frameworks, pri
 ```
 kevin-lourdu-portfolio/
 ├── assets/
+│   ├── kevin-portrait.jpg      # Profile portrait asset
 │   ├── preview.png             # Desktop hero preview
 │   └── preview-projects.png    # Projects archive preview
-├── about.html                  # Standalone biography
-├── contact.html                # Standalone contact hub
-├── education.html              # Standalone education view
+├── css/
+│   └── styles.css              # Stylesheet & design tokens
+├── js/
+│   └── script.js               # Interaction controller & routing
+├── pages/
+│   ├── about.html              # Standalone biography
+│   ├── contact.html            # Standalone contact hub
+│   ├── education.html          # Standalone education view
+│   ├── projects.html           # Standalone projects view
+│   └── skills.html             # Standalone skills view
 ├── index.html                  # Single-Page Application (SPA) root
-├── kevin-portrait.jpg          # Profile portrait asset
 ├── preview.bat                 # Windows local launcher
-├── projects.html               # Standalone projects view
 ├── README.md                   # Project documentation
-├── script.js                   # Interaction controller & routing
-├── skills.html                 # Standalone skills view
-├── styles.css                  # Stylesheet & design tokens
-└── vercel.json                 # Vercel configuration
+└── vercel.json                 # Vercel configuration & rewrites
 ```
 
 ---

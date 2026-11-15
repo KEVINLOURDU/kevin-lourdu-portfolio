@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Kevin Lourdu</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Education — Kevin Lourdu</title>
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e11d48'><circle cx='12' cy='12' r='10'/></svg>">
 </head>
 <body>
@@ -12,11 +12,11 @@
   <!-- Floating Navigation -->
   <header class="floating-nav-container">
     <nav class="floating-nav" aria-label="Main Navigation">
-      <a href="index.html#home" class="nav-item" aria-label="Home">
+      <a href="../index.html#home" class="nav-item" aria-label="Home">
         <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
         <span class="nav-tooltip">Home</span>
       </a>
-      <a href="projects.html" class="nav-item active" aria-label="Projects">
+      <a href="projects.html" class="nav-item" aria-label="Projects">
         <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         <span class="nav-tooltip">Projects</span>
       </a>
@@ -24,7 +24,7 @@
         <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
         <span class="nav-tooltip">Skills</span>
       </a>
-      <a href="education.html" class="nav-item" aria-label="Education">
+      <a href="education.html" class="nav-item active" aria-label="Education">
         <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
         <span class="nav-tooltip">Education</span>
       </a>
@@ -44,7 +44,7 @@
     <aside class="sidebar-sticky">
       <div class="profile-card tilt-card">
         <div class="profile-avatar-wrapper">
-          <img src="kevin-portrait.jpg" alt="Kevin Lourdu" class="profile-avatar-img">
+          <img src="../assets/kevin-portrait.jpg" alt="Kevin Lourdu" class="profile-avatar-img">
         </div>
         <div class="profile-info">
           <h2 class="profile-name">Kevin Lourdu</h2>
@@ -72,7 +72,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
           </a>
         </div>
-        <a href="index.html#contact" class="primary-cta-btn">
+        <a href="../index.html#contact" class="primary-cta-btn">
           <span>Get in Touch</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
@@ -83,80 +83,48 @@
     <main class="main-content">
       <section class="section-container">
         <div class="section-title-wrapper">
-          <span class="section-pill-tag">Engineering Showcase</span>
-          <h1 class="section-title">All Developed Projects</h1>
+          <span class="section-pill-tag">Academic Background</span>
+          <h1 class="section-title">Education &amp; Qualifications</h1>
           <p class="hero-lead-text" style="margin-top: 4px;">
-            Technical projects spanning genetic algorithms, university database portals, and interactive web software developed during academic and personal learning cycles.
+            Formal schooling and university degree coursework laying the foundation for computer science engineering and artificial intelligence innovation.
           </p>
         </div>
 
-        <div class="filter-bar">
-          <button class="filter-pill project-filter-pill active" data-filter="all">All Projects</button>
-          <button class="filter-pill project-filter-pill" data-filter="Artificial Intelligence">AI &amp; Algorithms</button>
-          <button class="filter-pill project-filter-pill" data-filter="Web">Web Applications</button>
-          <button class="filter-pill project-filter-pill" data-filter="UI/UX">Frontend Engineering</button>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card filterable-project-card tilt-card" data-category="Artificial Intelligence, Simulation, Python">
-            <div class="project-image-box">
-              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80" alt="Genetic Algorithm Visualizer" loading="lazy">
-            </div>
-            <div class="project-details">
-              <div class="project-meta-row">
-                <div class="project-tags-list">
-                  <span class="tag-badge">Artificial Intelligence</span>
-                  <span class="tag-badge">Python</span>
-                  <span class="tag-badge">Evolutionary Optimization</span>
+        <div class="education-list">
+          <div class="education-item tilt-card" style="gap: 16px;">
+            <div class="edu-header-row">
+              <div class="edu-left-col">
+                <div class="edu-icon-logo">JU</div>
+                <div class="edu-info">
+                  <h2 class="edu-degree">Jain University, Bengaluru</h2>
+                  <p class="edu-institution">Bachelor of Technology (B.Tech) — Computer Science &amp; Engineering</p>
                 </div>
               </div>
-              <h2 class="project-title">Genetic Algorithm Visualizer</h2>
-              <p class="project-desc">
-                An interactive computational simulation that illustrates the mechanics of biological evolution applied to mathematical optimization. Features chromosome representation, fitness proportionate roulette wheel selection, crossover probability tuning, mutation dynamics, and generation-over-generation convergence telemetry.
-              </p>
+              <span class="edu-date-pill">Currently in 2nd Year</span>
             </div>
-          </article>
+            <p class="project-desc">
+              <strong>Specialization:</strong> Artificial Intelligence and Machine Learning (CSE — AI &amp; ML).<br>
+              <strong>Key Subjects &amp; Coursework:</strong> Data Structures &amp; Algorithms in C, Python for Data Science, Discrete Mathematics, Linear Algebra, Probability &amp; Statistics, Artificial Intelligence Foundations, Computer Organization and Architecture.<br>
+              <strong>Academic Email:</strong> juug25btech23464@jainuniversity.ac.in
+            </p>
+          </div>
 
-          <!-- Project 2 -->
-          <article class="project-card filterable-project-card tilt-card" data-category="Web, Database, Full-Stack">
-            <div class="project-image-box">
-              <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80" alt="University Internship Portal" loading="lazy">
-            </div>
-            <div class="project-details">
-              <div class="project-meta-row">
-                <div class="project-tags-list">
-                  <span class="tag-badge">Web Application</span>
-                  <span class="tag-badge">Database Management</span>
-                  <span class="tag-badge">Student Services</span>
+          <div class="education-item tilt-card" style="gap: 16px;">
+            <div class="edu-header-row">
+              <div class="edu-left-col">
+                <div class="edu-icon-logo" style="color: var(--accent-gold);">CM</div>
+                <div class="edu-info">
+                  <h2 class="edu-degree">Cambridge Matric Higher Secondary School</h2>
+                  <p class="edu-institution">Krishnagiri, Tamil Nadu, India</p>
                 </div>
               </div>
-              <h2 class="project-title">University Internship Portal</h2>
-              <p class="project-desc">
-                A centralized university-level portal designed to connect B.Tech students at Jain University with corporate hiring managers. Features role-based access control, resume submission tracking, recruiter liaison pipelines, and automated application status notifications.
-              </p>
+              <span class="edu-date-pill">Secondary &amp; Higher Secondary</span>
             </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="project-card filterable-project-card tilt-card" data-category="UI/UX, Web, Frontend">
-            <div class="project-image-box">
-              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Personal Portfolio Website" loading="lazy">
-            </div>
-            <div class="project-details">
-              <div class="project-meta-row">
-                <div class="project-tags-list">
-                  <span class="tag-badge">UI/UX Engineering</span>
-                  <span class="tag-badge">Web Audio API</span>
-                  <span class="tag-badge">Motion Physics</span>
-                </div>
-              </div>
-              <h2 class="project-title">Personal Portfolio Website</h2>
-              <p class="project-desc">
-                A modern, high-contrast personal developer identity portal engineered with pure HTML5, CSS3 variables, and vanilla JavaScript. Integrates 3D spatial perspective mouse tilt, dynamic specular sheen spotlight glare, Emil Kowalski tactile spring clicks via Web Audio synthesis, and client-side SPA routing.
-              </p>
-            </div>
-          </article>
+            <p class="project-desc">
+              <strong>Milestones:</strong> Completed both 10th Standard (Secondary School Leaving Certificate) and 12th Standard (Higher Secondary Certificate).<br>
+              <strong>Academic Stream:</strong> Science &amp; Mathematics with Computer Science. Developed analytical problem-solving and foundational logic that inspired higher studies in engineering.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -170,6 +138,6 @@
     </main>
   </div>
 
-  <script src="script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

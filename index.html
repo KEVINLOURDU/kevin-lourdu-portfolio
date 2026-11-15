@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Lourdu — Shadow Luxe Portfolio &amp; AI Systems</title>
+  <meta name="description" content="Official portfolio of Kevin Lourdu, B.Tech CSE (Artificial Intelligence & Machine Learning) student at Jain University, Bengaluru.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e11d48'><circle cx='12' cy='12' r='10'/></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       FLOATING TOP PILL NAVIGATION
+       ======================================================================== -->
+  <header class="floating-nav-container">
+    <nav class="floating-nav" aria-label="Main Navigation">
+      <button class="nav-item active" data-view="home" aria-label="Home">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span class="nav-tooltip">Home</span>
+      </button>
+
+      <button class="nav-item" data-view="projects" aria-label="Projects">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+        <span class="nav-tooltip">Projects</span>
+      </button>
+
+      <button class="nav-item" data-view="skills" aria-label="Skills &amp; Stack">
+        <svg viewBox="0 0 24 24">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        <span class="nav-tooltip">Skills</span>
+      </button>
+
+      <button class="nav-item" data-view="education" aria-label="Education">
+        <svg viewBox="0 0 24 24">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+        <span class="nav-tooltip">Education</span>
+      </button>
+
+      <button class="nav-item" data-view="about" aria-label="About Me">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4"></circle>
+          <path d="M5.5 21a8.38 8.38 0 0 1 13 0"></path>
+        </svg>
+        <span class="nav-tooltip">About</span>
+      </button>
+
+      <button class="nav-item" data-view="contact" aria-label="Contact">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span class="nav-tooltip">Contact</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       FLOATING CORNER ACTION BADGES
+       ======================================================================== -->
+  <div class="corner-badge-left">
+    <div class="action-pill glass-dark">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+      </svg>
+      <span>Jain University — CSE (AI &amp; ML)</span>
+    </div>
+  </div>
+
+  <div class="corner-badge-right">
+    <a href="https://www.linkedin.com/in/kevin-lourdu-a-3013b038b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="action-pill glass-crimson">
+      <span>Connect on LinkedIn</span>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="7" y1="17" x2="17" y2="7"></line>
+        <polyline points="7 7 17 7 17 17"></polyline>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/_kev.shadowluxe_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" class="action-pill glass-dark">
+      <span>@_kev.shadowluxe_</span>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       MASTER WRAPPER: SIDEBAR + CONTENT
+       ======================================================================== -->
+  <div class="master-wrapper">
+
+    <!-- LEFT STICKY SIDEBAR: PROFILE CARD -->
+    <aside class="sidebar-sticky">
+      <div class="profile-card tilt-card">
+        
+        <!-- Profile Avatar Box (User Uploaded Executive Portrait) -->
+        <div class="profile-avatar-wrapper">
+          <img 
+            src="kevin-portrait.jpg" 
+            alt="Kevin Lourdu - B.Tech CSE AI &amp; ML" 
+            class="profile-avatar-img"
+            loading="eager"
+          >
+        </div>
+
+        <!-- Bio & Details -->
+        <div class="profile-info">
+          <h1 class="profile-name">Kevin Lourdu</h1>
+          <span class="profile-badge">CSE — AI &amp; ML (2nd Year)</span>
+          <p class="profile-tagline">
+            B.Tech Computer Science student at Jain University passionate about Artificial Intelligence, Machine Learning, and turning creative ideas into reality.
+          </p>
+          <div class="profile-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Bengaluru, KA (From Krishnagiri, TN)</span>
+          </div>
+        </div>
+
+        <!-- Social Icons Row -->
+        <div class="social-pills-row">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/kevin-lourdu-a-3013b038b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social-link-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/_kev.shadowluxe_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" class="social-link-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+          <!-- Personal Email -->
+          <a href="mailto:kevinpansi2008@gmail.com" class="social-link-btn" aria-label="Personal Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+
+          <!-- University Email -->
+          <a href="mailto:juug25btech23464@jainuniversity.ac.in" class="social-link-btn" aria-label="University Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Primary Action CTA -->
+        <a href="#contact" class="primary-cta-btn" onclick="document.getElementById('kevin-contact-form').scrollIntoView({behavior: 'smooth'})">
+          <span>Get in Touch</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+      </div>
+    </aside>
+
+    <!-- RIGHT SCROLLABLE CONTENT REGION -->
+    <main class="main-content">
+
+      <!-- ==================================================================
+           VIEW 1: HOME (DEFAULT VIEW)
+           ================================================================== -->
+      <div id="view-home" class="view-panel active">
+
+        <!-- SECTION 1: HERO DISPLAY -->
+        <section class="section-container hero-section">
+          <div class="hero-greeting-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>STUDENT &amp; AI DEVELOPER</span>
+          </div>
+
+          <h2 class="hero-giant-heading">
+            I AM <span class="ghost-stroke">KEVIN</span> LOURDU<br>
+            AI &amp; ML DEVELOPER
+          </h2>
+
+          <p class="hero-lead-text">
+            Passionate B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning at Jain University, Bengaluru. Dedicated to mastering modern programming, solving real-world challenges, and engineering innovative intelligent systems.
+          </p>
+
+          <!-- Metrics Row -->
+          <div class="hero-stats-grid">
+            <div class="stat-card tilt-card">
+              <span class="stat-number accent-crimson">2nd</span>
+              <span class="stat-label">Year CSE (AI &amp; ML)</span>
+            </div>
+            <div class="stat-card tilt-card">
+              <span class="stat-number">+3</span>
+              <span class="stat-label">Core Projects Built</span>
+            </div>
+            <div class="stat-card tilt-card">
+              <span class="stat-number" style="color: var(--accent-gold);">5+</span>
+              <span class="stat-label">Technical Pillars</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: DUAL ACCENT CARDS -->
+        <section class="section-container">
+          <div class="dual-cards-grid">
+            
+            <!-- Crimson Card -->
+            <div class="accent-card card-crimson tilt-card" onclick="window.switchView('projects')">
+              <div>
+                <span class="accent-card-tag">Intelligent Algorithms</span>
+                <h3 class="accent-card-title">Artificial Intelligence &amp; ML Models</h3>
+                <p class="accent-card-desc">
+                  Developing genetic algorithm visualizers, predictive classifiers, and stochastic data pipelines using Python and modern machine learning tools.
+                </p>
+              </div>
+              <div class="accent-card-footer">
+                <span style="font-size: 13px; font-weight: 600;">Explore AI Projects</span>
+                <div class="accent-card-arrow-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Velvet Noir Card -->
+            <div class="accent-card card-velvet tilt-card" onclick="window.switchView('skills')">
+              <div>
+                <span class="accent-card-tag">Systems &amp; Architecture</span>
+                <h3 class="accent-card-title">C Systems &amp; Web Portals</h3>
+                <p class="accent-card-desc">
+                  Building university internship web portals, low-level data structures in C programming, and interactive web applications with motion physics.
+                </p>
+              </div>
+              <div class="accent-card-footer">
+                <span style="font-size: 13px; font-weight: 600;">View Technical Stack</span>
+                <div class="accent-card-arrow-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 3: RECENT PROJECTS -->
+        <section class="section-container">
+          <div class="section-header-row">
+            <div class="section-title-wrapper">
+              <span class="section-pill-tag">Portfolio</span>
+              <h3 class="section-title">Featured Projects</h3>
+            </div>
+            <button class="section-view-all-link" onclick="window.switchView('projects')">
+              <span>View All Projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            
+            <!-- Project 1: Genetic Algorithm Visualizer -->
+            <article class="project-card tilt-card">
+              <div class="project-image-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80" 
+                  alt="Genetic Algorithm Visualizer" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="project-details">
+                <div class="project-meta-row">
+                  <div class="project-tags-list">
+                    <span class="tag-badge">Artificial Intelligence</span>
+                    <span class="tag-badge">Python</span>
+                    <span class="tag-badge">Simulation</span>
+                  </div>
+                </div>
+                <h4 class="project-title">Genetic Algorithm Visualizer</h4>
+                <p class="project-desc">
+                  An interactive computational tool that visually demonstrates natural selection principles, chromosome fitness functions, multi-point crossover, and mutation rates across evolving generations to solve optimization problems.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 2: University Internship Portal -->
+            <article class="project-card tilt-card">
+              <div class="project-image-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80" 
+                  alt="University Internship Portal" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="project-details">
+                <div class="project-meta-row">
+                  <div class="project-tags-list">
+                    <span class="tag-badge">Web Application</span>
+                    <span class="tag-badge">Database Management</span>
+                    <span class="tag-badge">Full-Stack</span>
+                  </div>
+                </div>
+                <h4 class="project-title">University Internship Portal</h4>
+                <p class="project-desc">
+                  A centralized academic platform engineered for Jain University students to browse verified internship openings, submit credentials, track application milestones, and streamline communication with corporate recruiters and faculty mentors.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 3: Personal Portfolio Website -->
+            <article class="project-card tilt-card">
+              <div class="project-image-box">
+                <img 
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" 
+                  alt="Personal Portfolio Website" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="project-details">
+                <div class="project-meta-row">
+                  <div class="project-tags-list">
+                    <span class="tag-badge">UI/UX Engineering</span>
+                    <span class="tag-badge">Web Audio API</span>
+                    <span class="tag-badge">Motion Physics</span>
+                  </div>
+                </div>
+                <h4 class="project-title">Personal Portfolio Website</h4>
+                <p class="project-desc">
+                  A high-performance personal developer portfolio built with 3D spatial perspective tilt, cursor-following specular spotlight sheen, Emil Kowalski spring micro-feedback, and Web Audio API synthesizer clicks.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- SECTION 4: TECHNICAL SKILLS & PILLARS -->
+        <section class="section-container">
+          <div class="section-header-row">
+            <div class="section-title-wrapper">
+              <span class="section-pill-tag">Capabilities</span>
+              <h3 class="section-title">Technical Skills &amp; Stack</h3>
+            </div>
+            <button class="section-view-all-link" onclick="window.switchView('skills')">
+              <span>View Breakdown</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">PY</div>
+              <h4 class="skill-title">Python</h4>
+              <p class="skill-desc">Core language for AI algorithms, automation scripts, data wrangling, and scientific computing.</p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">C</div>
+              <h4 class="skill-title">C Programming</h4>
+              <p class="skill-desc">Fundamental low-level systems programming, pointers, memory allocation, and data structures.</p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 80%; background: linear-gradient(90deg, #d4af37, #e5c07b);"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">AI</div>
+              <h4 class="skill-title">Artificial Intelligence</h4>
+              <p class="skill-desc">Search algorithms, heuristic evaluation, game trees, genetic optimization, and intelligent agents.</p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">ML</div>
+              <h4 class="skill-title">Machine Learning</h4>
+              <p class="skill-desc">Supervised &amp; unsupervised learning, regression, classification, model evaluation, and feature engineering.</p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 78%; background: linear-gradient(90deg, #e11d48, #f43f5e);"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">DS</div>
+              <h4 class="skill-title">Data Science</h4>
+              <p class="skill-desc">Exploratory data analysis, statistical visualization, dataset preprocessing with NumPy and Pandas.</p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 75%; background: linear-gradient(90deg, #d4af37, #f59e0b);"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">DEV</div>
+              <h4 class="skill-title">Developer Tools</h4>
+              <p class="skill-desc">Git version control, GitHub collaboration, Visual Studio Code, Linux commands, and Markdown.</p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%; background: linear-gradient(90deg, #94a3b8, #e2e8f0);"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5: EDUCATION SNAPSHOT -->
+        <section class="section-container">
+          <div class="section-header-row">
+            <div class="section-title-wrapper">
+              <span class="section-pill-tag">Academics</span>
+              <h3 class="section-title">Education Journey</h3>
+            </div>
+            <button class="section-view-all-link" onclick="window.switchView('education')">
+              <span>Full Details</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="education-list">
+            <div class="education-item tilt-card">
+              <div class="edu-header-row">
+                <div class="edu-left-col">
+                  <div class="edu-icon-logo">JU</div>
+                  <div class="edu-info">
+                    <h4 class="edu-degree">B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</h4>
+                    <p class="edu-institution">Jain University — Bengaluru, Karnataka, India</p>
+                  </div>
+                </div>
+                <span class="edu-date-pill">2nd Year</span>
+              </div>
+              <p class="project-desc">
+                Specializing in artificial intelligence architectures, machine learning models, algorithms, and data science pipelines. Actively participating in technical hackathons and project prototyping.
+              </p>
+            </div>
+
+            <div class="education-item tilt-card">
+              <div class="edu-header-row">
+                <div class="edu-left-col">
+                  <div class="edu-icon-logo" style="color: var(--accent-gold);">CM</div>
+                  <div class="edu-info">
+                    <h4 class="edu-degree">Higher Secondary Education (10th &amp; 12th Standard)</h4>
+                    <p class="edu-institution">Cambridge Matric Higher Secondary School — Krishnagiri, Tamil Nadu</p>
+                  </div>
+                </div>
+                <span class="edu-date-pill">Completed</span>
+              </div>
+              <p class="project-desc">
+                Completed secondary and higher secondary schooling with strong academic foundations in mathematics, physical sciences, and introductory computer applications.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 6: ABOUT ME -->
+        <section class="section-container">
+          <div class="section-header-row">
+            <div class="section-title-wrapper">
+              <span class="section-pill-tag">Profile</span>
+              <h3 class="section-title">About Kevin Lourdu</h3>
+            </div>
+          </div>
+
+          <div class="about-card tilt-card">
+            <p class="about-paragraph">
+              Hello! I'm <strong>Kevin Lourdu</strong>, a passionate and enthusiastic B.Tech student specializing in Computer Science and Engineering (Artificial Intelligence and Machine Learning) at Jain University, Bengaluru.
+            </p>
+
+            <p class="about-paragraph">
+              I am originally from Krishnagiri, Tamil Nadu, where I completed my 10th and 12th standard education at Cambridge Matric Higher Secondary School. My curiosity for computational systems led me to pursue AI &amp; ML, where mathematics and algorithmic logic converge to create intelligent software.
+            </p>
+
+            <blockquote class="about-quote">
+              "I believe in continuous learning, creativity, and turning ideas into reality."
+            </blockquote>
+
+            <p class="about-paragraph">
+              I am intensely interested in technology, programming, artificial intelligence, and exploring new innovations. I genuinely enjoy picking up new technical skills, solving challenging problems, and developing creative projects that have tangible utility. My overarching goal is to become a skilled technology professional, continuously advance my technical knowledge, and contribute to innovative real-world solutions.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Origin &amp; Roots</span>
+                <span class="about-highlight-val">Krishnagiri, Tamil Nadu, India</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Current Campus</span>
+                <span class="about-highlight-val">Jain University, Bengaluru</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Core Passion</span>
+                <span class="about-highlight-val">Artificial Intelligence &amp; Creative Problem Solving</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Career Objective</span>
+                <span class="about-highlight-val">Impactful Technology Professional &amp; AI Engineer</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 7: CONTACT FORM & CONNECT HUB -->
+        <section id="contact" class="section-container">
+          <div class="contact-card tilt-card">
+            <div class="contact-header">
+              <span class="section-pill-tag">Reach Out</span>
+              <h3 class="contact-headline">LET'S CONNECT &amp; COLLABORATE</h3>
+              <p class="contact-subtext">
+                Interested in working together on an AI/ML project, discussing technical innovations, or connecting over technology? Drop me a message below.
+              </p>
+            </div>
+
+            <!-- Direct Connect Cards -->
+            <div class="direct-connect-grid">
+              <a href="mailto:kevinpansi2008@gmail.com" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">Personal Email</span>
+                  <span class="connect-val">kevinpansi2008@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="mailto:juug25btech23464@jainuniversity.ac.in" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">University Email</span>
+                  <span class="connect-val">juug25btech23464@jainuniversity.ac.in</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kevin-lourdu-a-3013b038b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">LinkedIn Profile</span>
+                  <span class="connect-val">kevin-lourdu-a-3013b038b</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/_kev.shadowluxe_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">Instagram Handle</span>
+                  <span class="connect-val">@_kev.shadowluxe_</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Interactive Message Form -->
+            <form id="kevin-contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="user-name">Your Name</label>
+                  <input class="form-input" id="user-name" type="text" placeholder="Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="user-email">Your Email</label>
+                  <input class="form-input" id="user-email" type="email" placeholder="alex@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Subject / Purpose</label>
+                <input type="hidden" id="selected-subject" value="AI/ML Project Discussion">
+                <div class="subject-pills-selector">
+                  <button type="button" class="subject-btn selected" data-value="AI/ML Project Discussion">AI/ML Project Discussion</button>
+                  <button type="button" class="subject-btn" data-value="Engineering Collaboration">Engineering Collaboration</button>
+                  <button type="button" class="subject-btn" data-value="Innovation &amp; Tech">Innovation &amp; Tech</button>
+                  <button type="button" class="subject-btn" data-value="General Inquiry">General Inquiry</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="user-message">Message</label>
+                <textarea class="form-textarea" id="user-message" rows="4" placeholder="Hello Kevin, I would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Send Message to Kevin</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div id="form-success-toast" class="form-toast">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Thank you! Your message has been sent to Kevin Lourdu.</span>
+              </div>
+            </form>
+          </div>
+        </section>
+
+      </div><!-- /view-home -->
+
+
+      <!-- ==================================================================
+           VIEW 2: DEDICATED PROJECTS ARCHIVE
+           ================================================================== -->
+      <div id="view-projects" class="view-panel">
+        <section class="section-container">
+          <div class="section-title-wrapper">
+            <span class="section-pill-tag">Engineering Showcase</span>
+            <h2 class="section-title">All Developed Projects</h2>
+            <p class="hero-lead-text" style="margin-top: 4px;">
+              Technical projects spanning genetic algorithms, university database portals, and interactive web software developed during academic and personal learning cycles.
+            </p>
+          </div>
+
+          <div class="filter-bar">
+            <button class="filter-pill project-filter-pill active" data-filter="all">All Projects</button>
+            <button class="filter-pill project-filter-pill" data-filter="Artificial Intelligence">AI &amp; Algorithms</button>
+            <button class="filter-pill project-filter-pill" data-filter="Web">Web Applications</button>
+            <button class="filter-pill project-filter-pill" data-filter="UI/UX">Frontend Engineering</button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card filterable-project-card tilt-card" data-category="Artificial Intelligence, Simulation, Python">
+              <div class="project-image-box">
+                <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80" alt="Genetic Algorithm Visualizer" loading="lazy">
+              </div>
+              <div class="project-details">
+                <div class="project-meta-row">
+                  <div class="project-tags-list">
+                    <span class="tag-badge">Artificial Intelligence</span>
+                    <span class="tag-badge">Python</span>
+                    <span class="tag-badge">Evolutionary Optimization</span>
+                  </div>
+                </div>
+                <h3 class="project-title">Genetic Algorithm Visualizer</h3>
+                <p class="project-desc">
+                  An interactive computational simulation that illustrates the mechanics of biological evolution applied to mathematical optimization. Features chromosome representation, fitness proportionate roulette wheel selection, crossover probability tuning, mutation dynamics, and generation-over-generation convergence telemetry.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card filterable-project-card tilt-card" data-category="Web, Database, Full-Stack">
+              <div class="project-image-box">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80" alt="University Internship Portal" loading="lazy">
+              </div>
+              <div class="project-details">
+                <div class="project-meta-row">
+                  <div class="project-tags-list">
+                    <span class="tag-badge">Web Application</span>
+                    <span class="tag-badge">Database Management</span>
+                    <span class="tag-badge">Student Services</span>
+                  </div>
+                </div>
+                <h3 class="project-title">University Internship Portal</h3>
+                <p class="project-desc">
+                  A centralized university-level portal designed to connect B.Tech students at Jain University with corporate hiring managers. Features role-based access control, resume submission tracking, recruiter liaison pipelines, and automated application status notifications.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card filterable-project-card tilt-card" data-category="UI/UX, Web, Frontend">
+              <div class="project-image-box">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Personal Portfolio Website" loading="lazy">
+              </div>
+              <div class="project-details">
+                <div class="project-meta-row">
+                  <div class="project-tags-list">
+                    <span class="tag-badge">UI/UX Engineering</span>
+                    <span class="tag-badge">Web Audio API</span>
+                    <span class="tag-badge">Motion Physics</span>
+                  </div>
+                </div>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-desc">
+                  A modern, high-contrast personal developer identity portal engineered with pure HTML5, CSS3 variables, and vanilla JavaScript. Integrates 3D spatial perspective mouse tilt, dynamic specular sheen spotlight glare, Emil Kowalski tactile spring clicks via Web Audio synthesis, and client-side SPA routing.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div><!-- /view-projects -->
+
+
+      <!-- ==================================================================
+           VIEW 3: DEDICATED TECHNICAL SKILLS & STACK
+           ================================================================== -->
+      <div id="view-skills" class="view-panel">
+        <section class="section-container">
+          <div class="section-title-wrapper">
+            <span class="section-pill-tag">Stack &amp; Competencies</span>
+            <h2 class="section-title">Technical Skills &amp; Knowledge Pillars</h2>
+            <p class="hero-lead-text" style="margin-top: 4px;">
+              Core programming languages, algorithmic paradigms, machine learning concepts, and developer workflows mastered across coursework and self-directed builds.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">PY</div>
+              <h3 class="skill-title">Python</h3>
+              <p class="skill-desc">
+                Object-oriented programming, data structures, algorithm implementations, scientific libraries (NumPy, Pandas), script automation, and machine learning model training.
+              </p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">C</div>
+              <h3 class="skill-title">C Programming</h3>
+              <p class="skill-desc">
+                Procedural programming, pointer arithmetic, manual memory management (malloc/free), linked lists, stacks, queues, trees, and computational complexity analysis.
+              </p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 80%; background: linear-gradient(90deg, #d4af37, #e5c07b);"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">AI</div>
+              <h3 class="skill-title">Artificial Intelligence</h3>
+              <p class="skill-desc">
+                Heuristic search techniques (A*, Greedy Best-First), state space representation, genetic algorithms, fitness evaluation functions, game playing heuristics, and optimization.
+              </p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">ML</div>
+              <h3 class="skill-title">Machine Learning</h3>
+              <p class="skill-desc">
+                Supervised &amp; unsupervised learning paradigms, linear/logistic regression, decision trees, random forests, model validation metrics (precision, recall, F1, confusion matrices).
+              </p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 78%; background: linear-gradient(90deg, #e11d48, #f43f5e);"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">DS</div>
+              <h3 class="skill-title">Data Science</h3>
+              <p class="skill-desc">
+                Data wrangling, exploratory data analysis (EDA), cleaning missing values, outliers detection, statistical distributions, and visualization using Matplotlib and Seaborn.
+              </p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 75%; background: linear-gradient(90deg, #d4af37, #f59e0b);"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card">
+              <div class="skill-icon-badge">DEV</div>
+              <h3 class="skill-title">Developer Tooling</h3>
+              <p class="skill-desc">
+                Visual Studio Code setup, Git distributed version control, GitHub repositories, branch management, pull requests, Linux terminal commands, and Markdown documentation.
+              </p>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%; background: linear-gradient(90deg, #94a3b8, #e2e8f0);"></div></div>
+            </div>
+          </div>
+        </section>
+      </div><!-- /view-skills -->
+
+
+      <!-- ==================================================================
+           VIEW 4: DEDICATED EDUCATION & TIMELINE
+           ================================================================== -->
+      <div id="view-education" class="view-panel">
+        <section class="section-container">
+          <div class="section-title-wrapper">
+            <span class="section-pill-tag">Academic Background</span>
+            <h2 class="section-title">Education &amp; Qualifications</h2>
+            <p class="hero-lead-text" style="margin-top: 4px;">
+              Formal schooling and university degree coursework laying the foundation for computer science engineering and artificial intelligence innovation.
+            </p>
+          </div>
+
+          <div class="education-list">
+            <div class="education-item tilt-card" style="gap: 16px;">
+              <div class="edu-header-row">
+                <div class="edu-left-col">
+                  <div class="edu-icon-logo">JU</div>
+                  <div class="edu-info">
+                    <h3 class="edu-degree">Jain University, Bengaluru</h3>
+                    <p class="edu-institution">Bachelor of Technology (B.Tech) — Computer Science &amp; Engineering</p>
+                  </div>
+                </div>
+                <span class="edu-date-pill">Currently in 2nd Year</span>
+              </div>
+              <p class="project-desc">
+                <strong>Specialization:</strong> Artificial Intelligence and Machine Learning (AI &amp; ML).<br>
+                <strong>Key Subjects &amp; Coursework:</strong> Data Structures &amp; Algorithms in C, Python for Data Science, Discrete Mathematics, Linear Algebra, Probability &amp; Statistics, Artificial Intelligence Foundations, Computer Organization and Architecture.<br>
+                <strong>Academic Email:</strong> juug25btech23464@jainuniversity.ac.in
+              </p>
+            </div>
+
+            <div class="education-item tilt-card" style="gap: 16px;">
+              <div class="edu-header-row">
+                <div class="edu-left-col">
+                  <div class="edu-icon-logo" style="color: var(--accent-gold);">CM</div>
+                  <div class="edu-info">
+                    <h3 class="edu-degree">Cambridge Matric Higher Secondary School</h3>
+                    <p class="edu-institution">Krishnagiri, Tamil Nadu, India</p>
+                  </div>
+                </div>
+                <span class="edu-date-pill">Secondary &amp; Higher Secondary</span>
+              </div>
+              <p class="project-desc">
+                <strong>Milestones:</strong> Completed both 10th Standard (Secondary School Leaving Certificate) and 12th Standard (Higher Secondary Certificate).<br>
+                <strong>Academic Stream:</strong> Science &amp; Mathematics with Computer Science. Developed analytical problem-solving and foundational logic that inspired higher studies in engineering.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div><!-- /view-education -->
+
+
+      <!-- ==================================================================
+           VIEW 5: DEDICATED ABOUT ME
+           ================================================================== -->
+      <div id="view-about" class="view-panel">
+        <section class="section-container">
+          <div class="section-title-wrapper">
+            <span class="section-pill-tag">Biography</span>
+            <h2 class="section-title">About Kevin Lourdu</h2>
+            <p class="hero-lead-text" style="margin-top: 4px;">
+              Background, motivations, creative philosophy, and long-term vision in the world of technology and artificial intelligence.
+            </p>
+          </div>
+
+          <div class="about-card tilt-card">
+            <h3 style="font-family: var(--font-heading); font-size: 24px; color: var(--text-white);">
+              Introduction &amp; Journey
+            </h3>
+            <p class="about-paragraph">
+              Hello! I'm <strong>Kevin Lourdu</strong>, a passionate and enthusiastic B.Tech student specializing in Computer Science and Engineering (Artificial Intelligence and Machine Learning) at Jain University.
+            </p>
+
+            <p class="about-paragraph">
+              I am from <strong>Krishnagiri, Tamil Nadu</strong>. I completed my 10th and 12th standard at Cambridge Matric Higher Secondary School. My formative years in Krishnagiri sparked a deep curiosity about how digital systems operate and how automation can simplify complex tasks.
+            </p>
+
+            <blockquote class="about-quote">
+              "I believe in continuous learning, creativity, and turning ideas into reality."
+            </blockquote>
+
+            <p class="about-paragraph">
+              I am interested in technology, programming, artificial intelligence, and exploring new innovations. I enjoy learning new skills, solving problems, and developing creative projects.
+            </p>
+
+            <p class="about-paragraph">
+              My goal is to become a skilled technology professional, continuously improve my technical knowledge, and contribute to innovative real-world solutions.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Full Name</span>
+                <span class="about-highlight-val">Kevin Lourdu</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Hometown</span>
+                <span class="about-highlight-val">Krishnagiri, Tamil Nadu</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Current Base</span>
+                <span class="about-highlight-val">Bengaluru, Karnataka, India</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">University</span>
+                <span class="about-highlight-val">Jain University (2nd Year)</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Specialization</span>
+                <span class="about-highlight-val">CSE — AI &amp; Machine Learning</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="about-highlight-title">Guiding Belief</span>
+                <span class="about-highlight-val">Continuous Learning &amp; Creativity</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><!-- /view-about -->
+
+
+      <!-- ==================================================================
+           VIEW 6: DEDICATED CONTACT & CONNECT HUB
+           ================================================================== -->
+      <div id="view-contact" class="view-panel">
+        <section class="section-container">
+          <div class="section-title-wrapper">
+            <span class="section-pill-tag">Communication</span>
+            <h2 class="section-title">Get in Touch with Kevin</h2>
+            <p class="hero-lead-text" style="margin-top: 4px;">
+              Feel free to reach out for student internship opportunities, open-source AI collaborations, or engineering queries.
+            </p>
+          </div>
+
+          <div class="contact-card tilt-card">
+            <div class="direct-connect-grid">
+              <a href="mailto:kevinpansi2008@gmail.com" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">Personal Email</span>
+                  <span class="connect-val">kevinpansi2008@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="mailto:juug25btech23464@jainuniversity.ac.in" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">University Email</span>
+                  <span class="connect-val">juug25btech23464@jainuniversity.ac.in</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kevin-lourdu-a-3013b038b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">LinkedIn</span>
+                  <span class="connect-val">kevin-lourdu-a-3013b038b</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/_kev.shadowluxe_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" class="connect-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <div class="connect-info">
+                  <span class="connect-label">Instagram</span>
+                  <span class="connect-val">@_kev.shadowluxe_</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div><!-- /view-contact -->
+
+
+      <!-- ==================================================================
+           SITE FOOTER
+           ================================================================== -->
+      <footer class="site-footer">
+        <div>
+          <span>&copy; Kevin Lourdu. All rights reserved. B.Tech CSE (AI &amp; ML) — Jain University.</span>
+        </div>
+        <button class="back-to-top-btn" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </footer>
+
+    </main>
+  </div><!-- /master-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>

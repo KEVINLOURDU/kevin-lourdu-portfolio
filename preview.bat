@@ -1,0 +1,3 @@
+@echo off
+echo Launching Kevin Lourdu Portfolio in default browser...
+start "" "%~dp0index.html"
